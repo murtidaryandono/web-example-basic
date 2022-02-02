@@ -138,4 +138,3 @@ mvc.statics.show-list=[true if you want to be show via url]
 email : murti.daryandono@gmail.com <br/>
 twitter : murti_d <br/>
 blog : https://daryandono.id
----
