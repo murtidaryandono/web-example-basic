@@ -1,7 +1,7 @@
-# web-example-basic
+#web-example-basic
 
 ---
-### Table of contents
+###Table of contents
 1. Version <br/>
 2. Description <br/>
 3. Technology stack <br/>
@@ -14,13 +14,13 @@
 10. Author
 
 ---
-### 1. Version
+###1. Version
 | Date | Version | Author | Changelog |
 | --- | --- | --- | --- |
 | 2022-01-31 | 1.0.0 | Murti Daryandono | Initial release |
 ---
 
-### 2. Description
+###2. Description
 **web-example-basic** is a sample project that intended to help Java developers create basic web application using Java
 based technologies based on MVC (Model View Controller) concept.
 In this sample project, some feature will be provided, such as :
@@ -32,7 +32,7 @@ In this sample project, some feature will be provided, such as :
 - Test REST service
 ---
 
-### 3. Technology stack
+###3. Technology stack
 - Blade : Java web framework (here are [blade link](https://github.com/lets-blade/blade) & [baeldung link](https://www.baeldung.com/blade))
 - Gson : JSON manipulation tools from Google ([Gson link](https://github.com/google/gson))
 - Jetbrick : Java page templating ([Jetbrick link](https://github.com/lets-blade/blade-demos/tree/master/blade-template))
@@ -43,8 +43,7 @@ In this sample project, some feature will be provided, such as :
 - Clay : CSS framework implementing Lexicon design ([Clay link](https://clayui.com/))
 ---
 
-### 4. Architecture
-
+###4. Architecture
 ```mermaid
 graph TD;
 A[Web browser] --> B[Blade - Web framework];
@@ -61,12 +60,11 @@ B --> G[SL4J - Logging];
 ```
 ---
 
-### 5. Sequence diagram
+###5. Sequence diagram
 
 ---
 
-### 6. Project structure
-
+###6. Project structure
 ```
 project : web-example-basic
 +-- pom.xml
@@ -106,19 +104,17 @@ project : web-example-basic
 
 ---
 
-### 7. Tutorial
+###7. Tutorial
 
 ---
 
-### 8. Environment properties
+###8. Environment properties
 | Environment | File properties | 
 | --- | --- |
 | Development | application.properties | 
 | Staging | application-stg.properties | 
 | Production | application-prd.properties | 
-
 Contents of environment properties are :
-
 ```properties
 # server configuration
 server.port=[port value where your application will run]
@@ -130,14 +126,14 @@ mvc.statics.show-list=[true if you want to be show via url]
 
 ---
 
-### 9. Tools
+###9. Tools
 - [Java 8]() as main language
 - [Maven]() as dependency manager
 - [IntelliJ]() as Java IDE (Integrated Development Environemnt)
 - [Mermaid]() as markdown plugin for diagram
 ---
 
-### 10. Author
+###10. Author
 > name : Murti Daryandono <br/>
 email : murti.daryandono@gmail.com <br/>
 twitter : murti_d <br/>
