@@ -94,7 +94,9 @@ project : web-example-basic
 |               +-- css
 |                   +-- atlass.css
 |               +-- img
-|                   +-- icons.svg                    
+|                   +-- icons.svg 
+|               +-- js
+|                   +-- hibiki-prod.min.js               
 |   +-- test
 |       +-- java
 |           +-- id
