@@ -1,17 +1,17 @@
 # web-example-basic
 
----
 ### Table of contents
-1. Version <br/>
-2. Description <br/>
-3. Technology stack <br/>
-4. Architecture <br/>
-5. Sequence diagram <br/>
-6. Project structure <br/>
-7. Tutorial <br/>
-8. Environment properties <br/>
-9. Tools <br/>
-10. Author
+1. [Version](https://github.com/murtidaryandono/web-example-basic#1-version) <br/>
+2. [Description](https://github.com/murtidaryandono/web-example-basic#2-description) <br/>
+3. [Technology stack](https://github.com/murtidaryandono/web-example-basic#3-technology-stack) <br/>
+4. [Architecture](https://github.com/murtidaryandono/web-example-basic#4-architecture) <br/>
+5. [Sequence diagram](https://github.com/murtidaryandono/web-example-basic#5-sequence-diagram) <br/>
+6. [Project structure](https://github.com/murtidaryandono/web-example-basic#6-project-structure) <br/>
+7. [Tutorial](https://github.com/murtidaryandono/web-example-basic#7-tutorial) <br/>
+8. [Environment properties](https://github.com/murtidaryandono/web-example-basic#8-environment-properties) <br/>
+9. [Run application](https://github.com/murtidaryandono/web-example-basic#9-run-application) <br/>
+10. [Tools](https://github.com/murtidaryandono/web-example-basic#10-tools) <br/>
+11. [Author](https://github.com/murtidaryandono/web-example-basic#11-author)
 
 ---
 ### 1. Version
@@ -127,16 +127,30 @@ mvc.statics=[path to static directory]
 mvc.statics.show-list=[true if you want to be show via url]
 ```
 
+### 9. Run application
+
+- Run in development environment
+```
+java -jar target/web-example-basic.jar
+```
+- Run in staging environment
+```
+java -jar target/web-example-basic.jar --app.env=stg
+```
+- Run in production environment
+```
+java -jar target/web-example-basic.jar --app.env=prd
+```
 ---
 
-### 9. Tools
+### 10. Tools
 - [Java 8]() as main language
 - [Maven]() as dependency manager
 - [IntelliJ]() as Java IDE (Integrated Development Environemnt)
 - [Mermaid]() as markdown plugin for diagram
 ---
 
-### 10. Author
+### 11. Author
 > name : Murti Daryandono <br/>
 email : murti.daryandono@gmail.com <br/>
 twitter : murti_d <br/>
