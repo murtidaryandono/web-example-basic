@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application</title>
+    <link rel="stylesheet" href="/static/css/atlas.css"/>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/hibiki-prod.min.js"></script>
+</head>
+<body>
+    <template hibiki>
+        <nav
+                class="navbar navbar-collapse-absolute navbar-expand-md navbar-underline navigation-bar navigation-bar-light"
+        >
+            <div class="container-fluid container-fluid-max-xl">
+                <a
+                        aria-controls="navigationBarCollapse00"
+                        aria-expanded="false"
+                        aria-label="Toggle Navigation"
+                        class="collapsed navbar-toggler navbar-toggler-link"
+                        data-toggle="collapse"
+                        href="#navigationBarCollapse00"
+                        role="button"
+                >
+                    <span class="navbar-text-truncate">Home</span>
+                    <svg
+                            class="lexicon-icon lexicon-icon-caret-bottom"
+                            focusable="false"
+                            role="presentation"
+                    >
+                        <use href="/static/img/icons.svg#caret-bottom"></use>
+                    </svg>
+                </a>
+                <div
+                        class="collapse navbar-collapse"
+                        id="navigationBarCollapse00"
+                        style="z-index: 505;"
+                >
+                    <div class="container-fluid container-fluid-max-xl">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">
+                                    <span class="navbar-text-truncate">Home</span>
+                                </a>
+                            </li>
+                            <li aria-label="Current Page" class="nav-item">
+                                <a class="active nav-link" href="/partner">
+                                    <span class="navbar-text-truncate">Partner</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#1">
+                                    <span class="navbar-text-truncate">Customer</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#1">
+                                    <span class="navbar-text-truncate">Account</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#1">
+                                    <span class="navbar-text-truncate">Audit</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-monospaced" href="#1" role="button">
+                            <svg
+                                    class="lexicon-icon lexicon-icon-bell-on"
+                                    focusable="false"
+                                    role="presentation"
+                            >
+                                <use
+                                        href="/static/img/icons.svg#bell-on"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a
+                                aria-expanded="false"
+                                aria-haspopup="true"
+                                class="dropdown-toggle nav-link nav-link-monospaced"
+                                data-toggle="dropdown"
+                                href="#1"
+                                role="button"
+                        >
+                            <svg
+                                    class="lexicon-icon lexicon-icon-cog"
+                                    focusable="false"
+                                    role="presentation"
+                            >
+                                <use href="/static/img/icons.svg#cog"></use>
+                            </svg>
+                        </a>
+                        <ul
+                                aria-labelledby="navbarDropdownMenuLink"
+                                class="dropdown-menu dropdown-menu-right"
+                        >
+                            <li><a class="dropdown-item" href="#1">Account</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#1">Settings</a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="/sign-out">Sign out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="menubar menubar-transparent menubar-vertical-expand-md">
+            <div class="collapse menubar-collapse" id="menubarVerticalMdCollapse01">
+                <ul class="nav nav-nested-margins">
+                    <li class="nav-item">
+                        <a
+                                aria-controls="menubarVerticalMdNestedCollapse01"
+                                aria-expanded="false"
+                                class="collapsed collapse-icon nav-link"
+                                data-toggle="collapse"
+                                href="#menubarVerticalMdNestedCollapse01"
+                                role="button"
+                        >
+                            <span class="c-inner" tabindex="-1">
+                                Basic information
+                                <span class="collapse-icon-closed">
+                                    <svg
+                                            class="lexicon-icon lexicon-icon-caret-right"
+                                            focusable="false"
+                                            role="presentation"
+                                    >
+                                        <use
+                                                href="/static/img/icons.svg#caret-right"
+                                        ></use>
+                                    </svg>
+                                </span>
+                                <span class="collapse-icon-open">
+                                    <svg
+                                            class="lexicon-icon lexicon-icon-caret-bottom"
+                                            focusable="false"
+                                            role="presentation"
+                                    >
+                                        <use
+                                                href="/static/img/icons.svg#caret-bottom"
+                                        ></use>
+                                    </svg>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="menubarVerticalMdNestedCollapse01">
+                            <ul class="nav nav-stacked">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#1"
+                                    ><span class="c-inner" tabindex="-1"
+                                    >Inquiry data</span
+                                    ></a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#1"
+                                    ><span class="c-inner" tabindex="-1"
+                                    >Create new data</span
+                                    ></a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                aria-controls="menubarVerticalMdNestedCollapse02"
+                                aria-expanded="false"
+                                class="collapsed collapse-icon nav-link"
+                                data-toggle="collapse"
+                                href="#menubarVerticalMdNestedCollapse02"
+                                role="button"
+                        >
+                            <span class="c-inner" tabindex="-1">
+                                Credentials
+                                <span class="collapse-icon-closed">
+                                    <svg
+                                            class="lexicon-icon lexicon-icon-caret-right"
+                                            focusable="false"
+                                            role="presentation"
+                                    >
+                                        <use
+                                                href="/static/img/icons.svg#caret-right"
+                                        ></use>
+                                    </svg>
+                                </span>
+                                <span class="collapse-icon-open">
+                                    <svg
+                                            class="lexicon-icon lexicon-icon-caret-bottom"
+                                            focusable="false"
+                                            role="presentation"
+                                    >
+                                        <use
+                                                href="/static/img/icons.svg#caret-bottom"
+                                        ></use>
+                                    </svg>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="menubarVerticalMdNestedCollapse02">
+                            <ul class="nav nav-stacked">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#1"
+                                    ><span class="c-inner" tabindex="-1"
+                                    >Request new credential</span
+                                    ></a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#1"
+                                    ><span class="c-inner" tabindex="-1"
+                                    >List of credentials</span
+                                    ></a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                aria-controls="menubarVerticalMdNestedCollapse03"
+                                aria-expanded="false"
+                                class="collapsed collapse-icon nav-link"
+                                data-toggle="collapse"
+                                href="#menubarVerticalMdNestedCollapse03"
+                                role="button"
+                        >
+                            <span class="c-inner" tabindex="-1">
+                                Report
+                                <span class="collapse-icon-closed">
+                                    <svg
+                                            class="lexicon-icon lexicon-icon-caret-right"
+                                            focusable="false"
+                                            role="presentation"
+                                    >
+                                        <use
+                                                href="/static/img/icons.svg#caret-right"
+                                        ></use>
+                                    </svg>
+                                </span>
+                                <span class="collapse-icon-open">
+                                    <svg
+                                            class="lexicon-icon lexicon-icon-caret-bottom"
+                                            focusable="false"
+                                            role="presentation"
+                                    >
+                                        <use
+                                                href="/static/img/icons.svg#caret-bottom"
+                                        ></use>
+                                    </svg>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="menubarVerticalMdNestedCollapse03">
+                            <ul class="nav nav-stacked">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#1"
+                                    ><span class="c-inner" tabindex="-1"
+                                    >Request new report generation</span
+                                    ></a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#1"
+                                    ><span class="c-inner" tabindex="-1"
+                                    >List of report generated</span
+                                    ></a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </template>
+</body>
+</html>
