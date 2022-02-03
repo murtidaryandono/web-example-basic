@@ -3,15 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <title>Application</title>
-    <script src="/static/js/hibiki-prod.min.js"></script>
     <link rel="stylesheet" href="/static/css/atlas.css"/>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/hibiki-prod.min.js"></script>
 </head>
 <body>
     <template hibiki>
-        <h1 class="title">&#x1f338; Hibiki HTML</h1>
-        <div class="box">
-            Hibiki HTML <i>is</i> HTML.<br>
-        </div>
+        <nav
+                class="navbar navbar-collapse-absolute navbar-expand-md navbar-underline navigation-bar navigation-bar-light"
+        >
+            <div class="container-fluid container-fluid-max-xl">
+                <a
+                        aria-controls="navigationBarCollapse00"
+                        aria-expanded="false"
+                        aria-label="Toggle Navigation"
+                        class="collapsed navbar-toggler navbar-toggler-link"
+                        data-toggle="collapse"
+                        href="#navigationBarCollapse00"
+                        role="button"
+                >
+                    <span class="navbar-text-truncate">Home</span>
+                    <svg
+                            class="lexicon-icon lexicon-icon-caret-bottom"
+                            focusable="false"
+                            role="presentation"
+                    >
+                        <use href="/static/img/icons.svg#caret-bottom"></use>
+                    </svg>
+                </a>
+                <div
+                        class="collapse navbar-collapse"
+                        id="navigationBarCollapse00"
+                        style="z-index: 505;"
+                >
+                    <div class="container-fluid container-fluid-max-xl">
+                        <ul class="navbar-nav">
+                            <li aria-label="Current Page" class="nav-item">
+                                <a class="active nav-link" href="/">
+							        <span class="navbar-text-truncate">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/partner">
+							        <span class="navbar-text-truncate">Partner</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#1">
+							        <span class="navbar-text-truncate">Customer</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#1">
+                                    <span class="navbar-text-truncate">Account</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#1">
+                                    <span class="navbar-text-truncate">Audit</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-monospaced" href="#1" role="button">
+                            <svg
+                                    class="lexicon-icon lexicon-icon-bell-on"
+                                    focusable="false"
+                                    role="presentation"
+                            >
+                                <use
+                                        href="/static/img/icons.svg#bell-on"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="dropdown-toggle nav-link nav-link-monospaced"
+                            data-toggle="dropdown"
+                            href="#1"
+                            role="button"
+                        >
+                            <svg
+                                    class="lexicon-icon lexicon-icon-cog"
+                                    focusable="false"
+                                    role="presentation"
+                            >
+                                <use href="/static/img/icons.svg#cog"></use>
+                            </svg>
+                        </a>
+                        <ul
+                                aria-labelledby="navbarDropdownMenuLink"
+                                class="dropdown-menu dropdown-menu-right"
+                        >
+                            <li><a class="dropdown-item" href="#1">Profile</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#1">Settings</a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="/sign-out">Sign out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
     </template>
 </body>
 </html>
